@@ -19,7 +19,7 @@
     "start": "node src/index.js",
     "lint": "eslint src/** --ext .js --fix",
     "prepare": "husky install",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release --branches master"
   },
   "engines": {
     "yarn": "ONLY THE USE OF NPM IS ALLOWED"
