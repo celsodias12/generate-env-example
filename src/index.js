@@ -9,8 +9,10 @@ const fileName = process.argv?.[2] || '.env'
 
 const envPath = path.join(process.cwd(), fileName)
 
+const bufferEncoding = 'utf8'
+
 if (fs.existsSync(envPath)) {
-  fs.readFile(envPath, 'utf8', (errorRead, fileData) => {
+  fs.readFile(envPath, bufferEncoding, (errorRead, fileData) => {
     if (errorRead) {
       console.log(errorRead)
 
@@ -22,7 +24,7 @@ if (fs.existsSync(envPath)) {
     fs.writeFile(
       path.join(process.cwd(), '.env.example'),
       result,
-      'utf8',
+      bufferEncoding,
       errorWrite => {
         if (errorWrite) {
           console.log(errorWrite)
