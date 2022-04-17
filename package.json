@@ -1,12 +1,12 @@
 {
   "name": "generate-env-example",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Generate your .env.example file in a simple and fast way, you will never have to worry about manually updating your example file of environment variables!",
   "author": "Celsodias12 <47264001+celsodias12@users.noreply.github.com>",
   "homepage": "https://github.com/celsodias12/generate-env-example#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/celsodias12/generate-env-example.git"
+    "url": "https://github.com/celsodias12/generate-env-example.git"
   },
   "bugs": {
     "url": "https://github.com/celsodias12/generate-env-example/issues"
@@ -15,13 +15,14 @@
   "type": "module",
   "bin": "src/index.js",
   "main": "src/index.js",
-  "engines": {
-    "yarn": "ONLY THE USE OF NPM IS ALLOWED"
-  },
   "scripts": {
     "start": "node src/index.js",
     "lint": "eslint src/** --ext .js --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "semantic-release": "semantic-release"
+  },
+  "engines": {
+    "yarn": "ONLY THE USE OF NPM IS ALLOWED"
   },
   "devDependencies": {
     "eslint": "^7.21.0",
@@ -33,6 +34,7 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-unused-imports": "1.1.5",
-    "husky": "^7.0.0"
+    "husky": "^7.0.0",
+    "semantic-release": "^19.0.2"
   }
 }
