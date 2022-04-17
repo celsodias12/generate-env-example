@@ -1,25 +1,22 @@
-name: 'npm publish'
+name: Node.js CI
 
 on:
   push:
-    branches:
-      - 'main'
+    branches: [main]
 
 jobs:
-  release:
-    name: Publish
+  publish:
     runs-on: ubuntu-latest
+    if: ${{ github.ref == 'refs/heads/main' }}
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2.1.1
-
-      - name: Node
-        uses: actions/setup-node@v1.4.2
+      - uses: actions/checkout@v2
+      - name: Use Node.js 14
+        uses: actions/setup-node@v2
         with:
-          node-version: 12
-          registry-url: https://registry.npmjs.org
-
-      - name: Publish
-        run: npm publish --access public
+          node-version: 14
+      - run: npm ci
+      - run: npm run semantic-release
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
