@@ -73,4 +73,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- assets -->
 
-[project-screenshot]: docs/usage-example.gif
+[project-screenshot]: https://raw.githubusercontent.com/celsodias12/generate-env-example/main/docs/usage-example.gif
