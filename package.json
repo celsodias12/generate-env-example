@@ -1,0 +1,32 @@
+{
+  "name": "generate-env-example",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bin": "src/index.js",
+  "main": "src/index.js",
+  "engines": {
+    "yarn": "ONLY THE USE OF NPM IS ALLOWED"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "lint": "eslint src/** --ext .js --fix",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import-helpers": "^1.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-unused-imports": "1.1.5"
+  },
+  "devDependencies": {
+    "husky": "^7.0.0"
+  }
+}

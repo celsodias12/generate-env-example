@@ -1,0 +1,8 @@
+./src/assets
+node_modules
+./build
+yarn.lock
+package-lock.json
+./public
+./dist
+.env.*
