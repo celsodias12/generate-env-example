@@ -40,12 +40,7 @@
       }
     ],
     "jsx-quotes": "off",
-    "no-console": [
-      "warn",
-      {
-        "allow": ["warn", "error"]
-      }
-    ],
+    "no-console": "off",
     "quotes": "off",
     "unused-imports/no-unused-imports": "error",
     "no-unused-vars": "error",
