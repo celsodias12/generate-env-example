@@ -21,27 +21,27 @@
 
 <br/>
 
-1. Install library
+1. Install library as dev dependencies
 
    ```sh
-   npm i generate-env-example
+   npm i generate-env-example -D
    ```
 
    or
 
    ```sh
-   yarn add generate-env-example
+   yarn add generate-env-example -D
    ```
 
 - If your environment variables file is called .env, use it like this:
 
   ```sh
-  generate-env-example
+  npx generate-env-example
   ```
 
 - If your file is any other name, use it like this:
   ```sh
-  generate-env-example env-file-name
+  npx generate-env-example env-file-name
   ```
 
 ## Contributing
