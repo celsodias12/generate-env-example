@@ -37,6 +37,6 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-unused-imports": "1.1.5",
     "husky": "^7.0.0",
-    "semantic-release": "^19.0.2"
+    "semantic-release": "^21.0.1"
   }
 }
