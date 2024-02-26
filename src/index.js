@@ -23,7 +23,7 @@ function run() {
       const result = fileData.replace(regex, '')
 
       fs.writeFile(
-        path.join(process.cwd(), '.env.example'),
+        path.join(process.cwd(), `${fileName}.example`),
         result,
         bufferEncoding,
         errorWrite => {
@@ -33,7 +33,7 @@ function run() {
             return
           }
 
-          console.log('\nSuccessfully created .env.example')
+          console.log(`\nSuccessfully created ${fileName}.example`)
         }
       )
     })
